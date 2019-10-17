@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #888;
+		}
+		table{
+			border-collapse: collapse;
+			margin: 10px auto;
+		}
+		td{
+			width: 25px;
+			height: 25px;
+			border: 1px solid #fff;
+		}
+		.c1{
+			background: linear-gradient(to top, blue, #90f);
+		}
+		.c2{
+			background: linear-gradient(to top, purple, #c0f);
+		}
+		.c3{
+			background: linear-gradient(to top, deeppink, pink);
+		}
+		.c4{
+			background: linear-gradient(to top, orange, yellow);
+		}
+		.c5{
+			background: linear-gradient(to top, navy, cyan);
+		}
+		.c6{
+			background: linear-gradient(to top, green, yellowgreen);
+		}
+		.c7{
+			background: linear-gradient(to top, #333, #);
+		}
+	</style>
+</head>
+<body>
+	<h1>分数：0</h1>
+	<table id = "tab"></table>
+	<script src = "js/jquery-3.4.1.min.js"></script>
+	<script src = "js/Game.js"></script>
+	<script src = "js/Block.js"></script>
+	<script src = "js/Map.js"></script>
+	<script src = "js/block_json.js"></script>
+	<script>
+		//唯一暴露到全局的实例,game就是中介者
+		var game = new Game();
+		
+	</script>
+</body>
+</html>
